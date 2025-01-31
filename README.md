@@ -1,4 +1,4 @@
 # CGIAR
 Evidence Atlas for Systematic mapping: Digital Ag , CSA, mitigation 
 Link to get Evidence Atlas
-https://rawcdn.githack.com/Sheetalkumari14/CGIAR/469c1654f53243c86194c1d550957b1e8d37fc6d/Evidence_Atlas_Interactive_Map1.html
+(https://rawcdn.githack.com/Sheetalkumari14/CGIAR/32afcf1c0681e060eefb826f4a51c854ceff6cbb/Evidence_Atlas_Interactive_Map2.html)
