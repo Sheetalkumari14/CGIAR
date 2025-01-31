@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_35b7e7c5643b32946a8ac6d593e3a7b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_35b7e7c5643b32946a8ac6d593e3a7b4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_35b7e7c5643b32946a8ac6d593e3a7b4 = L.map(
+                "map_35b7e7c5643b32946a8ac6d593e3a7b4",
+                {
+                    center: [11.7471, 37.2972],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_987cd22aa1083e0d20cf2278ed86a264 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_987cd22aa1083e0d20cf2278ed86a264.addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+        
+    
+            var feature_group_03c64a18c2a9810bc30597c2983ce0f0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_03c64a18c2a9810bc30597c2983ce0f0.addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+        
+    
+            var feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32 = L.featureGroup.subGroup(
+                feature_group_03c64a18c2a9810bc30597c2983ce0f0
+            );
+        
+    
+            var marker_18398f5f036ac4e638e1691bae3d0725 = L.marker(
+                [0.0236, 37.9062],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_cfec22c4b8ebbc5250d1825a540c3b1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_18398f5f036ac4e638e1691bae3d0725.setIcon(icon_cfec22c4b8ebbc5250d1825a540c3b1a);
+        
+    
+        var popup_e6bbc560c1da8f64dae253d4478ea918 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fcc20e73d8e97e9b7ef685bb6c196365 = $(`<div id="html_fcc20e73d8e97e9b7ef685bb6c196365" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Abera 2023<br><b>Title:</b> Impacts of land cover and management change on top-of-canopy and below-canopy temperatures in Southeastern Kenya<br><b>Authors:</b> Temesgen Abera, Janne Heiskanen, Eduardo Maeda, Vincent Odongo, Petri Pellikka<br><b>Year:</b> 2023<br><b>Journal:</b> Science of the Total Environment<br><b>DOI:</b> http://dx.doi.org/10.1016/j.scitotenv.2023.162560<br><b>Study Country:</b> Kenya<br><b>Latitude:</b> 0.0236<br><b>Longitude:</b> 37.9062<br><b>Digital Ag:</b> Sensors<br><b>CSA Practices:</b> wildlife conservation; grassland management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Improved soil health<br><b>Mitigation Co-benefits:</b> Not described<br><b>Mitigation Tradeoffs:</b> human-wildlife symbiosis<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_e6bbc560c1da8f64dae253d4478ea918.setContent(html_fcc20e73d8e97e9b7ef685bb6c196365);
+            
+        
+
+        marker_18398f5f036ac4e638e1691bae3d0725.bindPopup(popup_e6bbc560c1da8f64dae253d4478ea918)
+        ;
+
+        
+    
+    
+            var marker_213b0f9611557cb71d97a547a9f399d5 = L.marker(
+                [27.6947, 85.3461],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_94a74410b294151385fc9702512c6230 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_213b0f9611557cb71d97a547a9f399d5.setIcon(icon_94a74410b294151385fc9702512c6230);
+        
+    
+        var popup_d7cf9d302c4ba90eb7c76086a9d7a469 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0b1e5abc31e9d5947c1a6c71e0436968 = $(`<div id="html_0b1e5abc31e9d5947c1a6c71e0436968" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Aoki 2024<br><b>Title:</b> Exploring the Impact of IoT and Weather Data Utilization on Agricultural Productivity in Nepal<br><b>Authors:</b> Eiji Aoki, Hiroshi Nozaki, Raunak Baskota<br><b>Year:</b> 2024<br><b>Journal:</b> Published in LNDECT 225, part of INCoS 2024 proceeding<br><b>DOI:</b> https://doi.org/10.1007/978-3-031-72322-3_26<br><b>Study Country:</b> Nepal<br><b>Latitude:</b> 27.6947<br><b>Longitude:</b> 85.3461<br><b>Digital Ag:</b> Mobile phone; Sensors; Precision Agriculture<br><b>CSA Practices:</b> irrigation management; soil health monitoring<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Access to inputs & technology; Cost & resource constraints; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Technology suitability and data gaps; Farmer education & technical capacity<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Efficient resource use; Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> high cost of technology; need for dependable connectivity<br><b>Equity and Inclusion:</b> age, education<br></div>`)[0];
+                popup_d7cf9d302c4ba90eb7c76086a9d7a469.setContent(html_0b1e5abc31e9d5947c1a6c71e0436968);
+            
+        
+
+        marker_213b0f9611557cb71d97a547a9f399d5.bindPopup(popup_d7cf9d302c4ba90eb7c76086a9d7a469)
+        ;
+
+        
+    
+    
+            var marker_a58f562b6634515b59f209c4e9278117 = L.marker(
+                [26.00403, 85.3461],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_5fc76fc888429c27b4e165ac2988b8af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a58f562b6634515b59f209c4e9278117.setIcon(icon_5fc76fc888429c27b4e165ac2988b8af);
+        
+    
+        var popup_c345c6d9a554cdf7c02734cdd35fd05b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_852bf48fe174cadf54e438fe8307059c = $(`<div id="html_852bf48fe174cadf54e438fe8307059c" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Bijarniya 2020<br><b>Title:</b> Portfolios of Climate Smart Agriculture Practices in Smallholder Rice-Wheat System of Eastern Indo-Gangetic Plains—Crop Productivity, Resource Use Efficiency and Environmental Foot Prints<br><b>Authors:</b> Deepak Bijarniya, C. M. Parihar, R. K. Jat, Kailash Kalvania, S. K. Kakraliya, M. L. Jat  <br><b>Year:</b> 2020<br><b>Journal:</b> Agronomy<br><b>DOI:</b> 10.3390/agronomy10101561<br><b>Study Country:</b> India<br><b>Latitude:</b> 26.00403<br><b>Longitude:</b> 85.3461<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> nutrient management; reduced or no tillage; direct seeding of rice<br><b>Drivers (CSA):</b> Productivity & economic viability; Weather & climate resilience<br><b>Barriers (CSA):</b> Cost & resource constraints; Access to inputs & technology; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Infrastructure & advisory limitations; Awareness & trust barriers; Cost & economic concerns<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions; Improved soil health<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> increase labor requirement; cost concern for technology<br><b>Equity and Inclusion:</b> participatory approach to innovation<br></div>`)[0];
+                popup_c345c6d9a554cdf7c02734cdd35fd05b.setContent(html_852bf48fe174cadf54e438fe8307059c);
+            
+        
+
+        marker_a58f562b6634515b59f209c4e9278117.bindPopup(popup_c345c6d9a554cdf7c02734cdd35fd05b)
+        ;
+
+        
+    
+    
+            var marker_570e71b9fbd36cece8a7fac6018f778b = L.marker(
+                [-15.4505, 34.70034],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_1a279449681daa5e32c2dd334b5fa83b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_570e71b9fbd36cece8a7fac6018f778b.setIcon(icon_1a279449681daa5e32c2dd334b5fa83b);
+        
+    
+        var popup_f6b2716b623e42aa4e0d580921a9d3b7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_063e6129cde276c6f50f67750191ab8e = $(`<div id="html_063e6129cde276c6f50f67750191ab8e" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> McCarthy 2023<br><b>Title:</b> Can Drones Help Smallholder Farmers Improve Agriculture Efficiencies and Reduce Food Insecurity in Sub-Saharan Africa? Local Perceptions from Malawi<br><b>Authors:</b> McCarthy, C., Nyoni, Y., Kachamba, D.J., Banda, L.B., Moyo, B., Chisambi, C., Banfill, J. and Hoshino, B.<br><b>Year:</b> 2023<br><b>Journal:</b> Agriculture<br><b>DOI:</b> https://doi.org/10.3390/agriculture13051075<br><b>Study Country:</b> Malawi<br><b>Latitude:</b> -15.4505<br><b>Longitude:</b> 34.70034<br><b>Digital Ag:</b> Sensors<br><b>CSA Practices:</b> adjust irrigation schedules, fertilization practices, crop selection; pest control<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Farmer support & organizational networks<br><b>Barriers (Digital Ag):</b> Technology suitability and data gaps; Cost & economic concerns; Technological risk perception<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Climate resilience & adaptation<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_f6b2716b623e42aa4e0d580921a9d3b7.setContent(html_063e6129cde276c6f50f67750191ab8e);
+            
+        
+
+        marker_570e71b9fbd36cece8a7fac6018f778b.bindPopup(popup_f6b2716b623e42aa4e0d580921a9d3b7)
+        ;
+
+        
+    
+    
+            var marker_7478f12817bd4d063eda7acfda5bd078 = L.marker(
+                [28.6353, 77.1645],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_c0e09baa840af03712548b5c233cb8b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7478f12817bd4d063eda7acfda5bd078.setIcon(icon_c0e09baa840af03712548b5c233cb8b6);
+        
+    
+        var popup_64fdebec13a5a4dfe40561811fcfd02a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_89130acda6ea958f055ded9c90717c6d = $(`<div id="html_89130acda6ea958f055ded9c90717c6d" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Oyeogbe 2015<br><b>Title:</b> Decoupling trade-off in conservation agriculture - Sensor-aided nitrogen management in wheat<br><b>Authors:</b> I. Oyeogbe & T.K. Das <br><b>Year:</b> 2015<br><b>Journal:</b> Near Surface Geoscience<br><b>DOI:</b> not available<br><b>Study Country:</b> India<br><b>Latitude:</b> 28.6353<br><b>Longitude:</b> 77.1645<br><b>Digital Ag:</b> Sensors<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_64fdebec13a5a4dfe40561811fcfd02a.setContent(html_89130acda6ea958f055ded9c90717c6d);
+            
+        
+
+        marker_7478f12817bd4d063eda7acfda5bd078.bindPopup(popup_64fdebec13a5a4dfe40561811fcfd02a)
+        ;
+
+        
+    
+    
+            var marker_adf8c0fd6df60e2d6dc8c00a190339c5 = L.marker(
+                [19.7575, 75.7139],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_6634bcfdcc7c776eed4115a00d96a9de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_adf8c0fd6df60e2d6dc8c00a190339c5.setIcon(icon_6634bcfdcc7c776eed4115a00d96a9de);
+        
+    
+        var popup_c5080752b221ecc5254c59143ac8a40c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bf410bedd72d773a539dc180362eeae9 = $(`<div id="html_bf410bedd72d773a539dc180362eeae9" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Rakholia 2024<br><b>Title:</b> Emerging technology adoption for sustainable agriculture in India– a pilot study<br><b>Authors:</b> Rajnish Rakholia, Jinal Tailor , Mitul Prajapati, Manan Shah,  Jatinderkumar R. Saini  <br><b>Year:</b> 2024<br><b>Journal:</b> Journal of Agriculture and Food Research <br><b>DOI:</b> https://doi.org/10.1016/j.jafr.2024.101238<br><b>Study Country:</b> India<br><b>Latitude:</b> 19.7575<br><b>Longitude:</b> 75.7139<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> nutrient management; irrigation water management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Government & institutional trust; Market & information access<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Awareness & trust barriers; Technological risk perception; Technology suitability and data gaps; Infrastructure & advisory limitations<br><b>Mitigation:</b> Improved soil health; Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> high energy consumption<br><b>Equity and Inclusion:</b> education; traditional knowledge<br></div>`)[0];
+                popup_c5080752b221ecc5254c59143ac8a40c.setContent(html_bf410bedd72d773a539dc180362eeae9);
+            
+        
+
+        marker_adf8c0fd6df60e2d6dc8c00a190339c5.bindPopup(popup_c5080752b221ecc5254c59143ac8a40c)
+        ;
+
+        
+    
+    
+            var marker_c2882ab267a5e96be8a23eb409d2f37d = L.marker(
+                [28.6353, 77.1645],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_370b9f6eb85286de9e31980c1555a229 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c2882ab267a5e96be8a23eb409d2f37d.setIcon(icon_370b9f6eb85286de9e31980c1555a229);
+        
+    
+        var popup_4da5fa2d5f2a0e1a207032dfa7643a96 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f3aaf3e596f86a6b14b67a177afee727 = $(`<div id="html_f3aaf3e596f86a6b14b67a177afee727" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Shekhawat 2021<br><b>Title:</b> Achieving sustainability in food systems: Addressing changing climate through real time nitrogen and weed management in a conservation agriculture‐based maize–wheat system<br><b>Authors:</b> Kapila Shekhawat, Vinod K. Singh, Sanjay Singh Rathore, Rishi Raj, and T.K. Das<br><b>Year:</b> 2021<br><b>Journal:</b> Sustainability<br><b>DOI:</b> 10.3390/su13095010<br><b>Study Country:</b> New Delhi, India<br><b>Latitude:</b> 28.6353<br><b>Longitude:</b> 77.1645<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> nutrient management; integrated weed management<br><b>Drivers (CSA):</b> Nutrient & resource efficiency; Weather & climate resilience<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Technology suitability and data gaps; Farmer education & technical capacity<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> herbicide use dependence<br><b>Equity and Inclusion:</b> cost (access)<br></div>`)[0];
+                popup_4da5fa2d5f2a0e1a207032dfa7643a96.setContent(html_f3aaf3e596f86a6b14b67a177afee727);
+            
+        
+
+        marker_c2882ab267a5e96be8a23eb409d2f37d.bindPopup(popup_4da5fa2d5f2a0e1a207032dfa7643a96)
+        ;
+
+        
+    
+    
+            var marker_0d798b1befdb11925fef876781df9d1f = L.marker(
+                [9.36, 0.1495],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_b8c545ef4c47977a9281db9cf3ba9103 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d798b1befdb11925fef876781df9d1f.setIcon(icon_b8c545ef4c47977a9281db9cf3ba9103);
+        
+    
+        var popup_5822a5a8c2c34de31e82379cdf67ff8c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e2b3a81ea5d0a1f647647c64c3392622 = $(`<div id="html_e2b3a81ea5d0a1f647647c64c3392622" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Sutanto 2022<br><b>Title:</b> The Role of Soil Moisture Information in Developing Robust Climate Services for Smallholder Farmers: Evidence from Ghana<br><b>Authors:</b> Samuel J. Sutanto, Spyridon Paparrizos, Gordana Kranjac-Berisavljevic, Baba M. Jamaldeen, Abdulai K. Issahaku, Bizoola Z. Gandaa, Iwan Supit, and Erik van Slobbe<br><b>Year:</b> 2022<br><b>Journal:</b> Agronomy<br><b>DOI:</b> 10.3390/agronomy12020541.<br><b>Study Country:</b> Ghana<br><b>Latitude:</b> 9.36<br><b>Longitude:</b> 0.1495<br><b>Digital Ag:</b> Sensors; Mobile phone<br><b>CSA Practices:</b> weather and climate services; soil moisture management; climate resilient cropping management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Market & information access; CSA Integration <br><b>Barriers (Digital Ag):</b> Limited technology access & connectivity; Infrastructure & advisory limitations; Awareness & trust barriers<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> cost concerns; dependence on external help for maintenance<br><b>Equity and Inclusion:</b> gender<br></div>`)[0];
+                popup_5822a5a8c2c34de31e82379cdf67ff8c.setContent(html_e2b3a81ea5d0a1f647647c64c3392622);
+            
+        
+
+        marker_0d798b1befdb11925fef876781df9d1f.bindPopup(popup_5822a5a8c2c34de31e82379cdf67ff8c)
+        ;
+
+        
+    
+    
+            var marker_2f583eafeb5a551295b150ae37bef364 = L.marker(
+                [30.8955, 75.8117],
+                {
+}
+            ).addTo(feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32);
+        
+    
+            var icon_62384fe0ed20d5ba604236c572a5582d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2f583eafeb5a551295b150ae37bef364.setIcon(icon_62384fe0ed20d5ba604236c572a5582d);
+        
+    
+        var popup_9279c63d83895a9eec006bfc019d2022 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_75b3ee93c822e532e7ff7c7115f65df4 = $(`<div id="html_75b3ee93c822e532e7ff7c7115f65df4" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Varinderpal-Singh 2020<br><b>Title:</b> Optical Sensing and Arbuscular Mycorrhizal Fungi for Improving Fertilizer Nitrogen and Phosphorus Use Efficiencies in Maize<br><b>Authors:</b> Varinderpal-Singh, Kunal, Sandeep Sharma, S. K. Gosal, Rita Choudhary, Reena Singh & Alok Adholeya & Bijay-Singh<br><b>Year:</b> 2020<br><b>Journal:</b> Journal of Soil Science and Plant Nutrition<br><b>DOI:</b> 10.1007/s42729-020-00277-z<br><b>Study Country:</b> India<br><b>Latitude:</b> 30.8955<br><b>Longitude:</b> 75.8117<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> Arbuscular mycorrhizal fungi (AMF)<br><b>Drivers (CSA):</b> Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Farm-related challenges & trade-offs<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Cost & economic concerns<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> no change of digital CSA on crop yield<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_9279c63d83895a9eec006bfc019d2022.setContent(html_75b3ee93c822e532e7ff7c7115f65df4);
+            
+        
+
+        marker_2f583eafeb5a551295b150ae37bef364.bindPopup(popup_9279c63d83895a9eec006bfc019d2022)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32.addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+        
+    
+            var feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618 = L.featureGroup.subGroup(
+                feature_group_03c64a18c2a9810bc30597c2983ce0f0
+            );
+        
+    
+            var marker_aad585623e8a5e7da67605c5930bca30 = L.marker(
+                [10.5238, 2.7034],
+                {
+}
+            ).addTo(feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618);
+        
+    
+            var icon_502d6781f734da413bcaf54327fa0905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aad585623e8a5e7da67605c5930bca30.setIcon(icon_502d6781f734da413bcaf54327fa0905);
+        
+    
+        var popup_e2c357c913c970e3f5758a91cf502f8c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_939e141884a0a0348d1fe3818a6b73f8 = $(`<div id="html_939e141884a0a0348d1fe3818a6b73f8" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Anuga 2022<br><b>Title:</b> Climate-smart agriculture: Greenhouse gas mitigation in climate-smart villages of Ghana<br><b>Authors:</b> Samuel Weniga Anuga, Benedicta Yayra Fosu-Mensah, Daniel Nukpezah, Albert Ahenkan, Christopher Gordon, Richmond Silvanus Baye<br><b>Year:</b> 2022<br><b>Journal:</b> Environmental Sustainability<br><b>DOI:</b> https://doi.org/10.1007/s42398-022-00243-8<br><b>Study Country:</b> Ghana<br><b>Latitude:</b> 10.5238<br><b>Longitude:</b> 2.7034<br><b>Digital Ag:</b> Decision Support System (DSS)<br><b>CSA Practices:</b> organic farming<br><b>Drivers (CSA):</b> Weather & climate resilience; Productivity & economic viability<br><b>Barriers (CSA):</b> Cost & resource constraints; Farm-related challenges & trade-offs; Labor, work & gender issues<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Limited technology access & connectivity; Farmer education & technical capacity<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> no change in GHG emissions for some crops<br><b>Equity and Inclusion:</b> gender<br></div>`)[0];
+                popup_e2c357c913c970e3f5758a91cf502f8c.setContent(html_939e141884a0a0348d1fe3818a6b73f8);
+            
+        
+
+        marker_aad585623e8a5e7da67605c5930bca30.bindPopup(popup_e2c357c913c970e3f5758a91cf502f8c)
+        ;
+
+        
+    
+    
+            var marker_7484ab283a7ad49e8ad643c5ca5a44b6 = L.marker(
+                [11.7471, 8.5247],
+                {
+}
+            ).addTo(feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618);
+        
+    
+            var icon_1271fcd3781c1500c839bb84c7867a1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7484ab283a7ad49e8ad643c5ca5a44b6.setIcon(icon_1271fcd3781c1500c839bb84c7867a1d);
+        
+    
+        var popup_f1676db40662a3a67bfdb193053e9a93 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2db765faa6acaad42449c6b3530ad950 = $(`<div id="html_2db765faa6acaad42449c6b3530ad950" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Arouna 2020<br><b>Title:</b> One Size Fits All? Experimental Evidence on the Digital Delivery of Personalized Extension Advice in Nigeria<br><b>Authors:</b> Aminou Arouna, Jeffrey D. Michler, Wilfried G. Yergo, Kazuki Saito<br><b>Year:</b> 2020<br><b>Journal:</b> American Journal of Agricultural Economics<br><b>DOI:</b> https://doi.org/10.1111/ajae.12151 <br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 11.7471<br><b>Longitude:</b> 8.5247<br><b>Digital Ag:</b> Decision Support System (DSS); Mobile phone<br><b>CSA Practices:</b> nutrient management; CSA knowledge and information<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> CSA uncertainty & climate risks<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Limited technology access & connectivity; Farmer education & technical capacity; Infrastructure & advisory limitations<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> profit increased with fertilizer subsidies; additional training required for upscaling<br><b>Equity and Inclusion:</b> focus on inequalities (in access to information)<br></div>`)[0];
+                popup_f1676db40662a3a67bfdb193053e9a93.setContent(html_2db765faa6acaad42449c6b3530ad950);
+            
+        
+
+        marker_7484ab283a7ad49e8ad643c5ca5a44b6.bindPopup(popup_f1676db40662a3a67bfdb193053e9a93)
+        ;
+
+        
+    
+    
+            var marker_b30a80444c7d22e12dfee51f7a812492 = L.marker(
+                [1.9577, 37.2972],
+                {
+}
+            ).addTo(feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618);
+        
+    
+            var icon_bdb80fad47e6d1ea7f0f433ed2d218d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b30a80444c7d22e12dfee51f7a812492.setIcon(icon_bdb80fad47e6d1ea7f0f433ed2d218d8);
+        
+    
+        var popup_6bb783d09b4009020cbc99e4da4687fd = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c296ffd36e597a88ed47da8941b491e7 = $(`<div id="html_c296ffd36e597a88ed47da8941b491e7" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Cotter 2020<br><b>Title:</b> Creating the data basis to adapt agricultural decision support tools to new environments, land management and climate change—A case study of the RiceAdvice App<br><b>Authors:</b> Marc Cotter, Folkard Asch, Bayuh Belay Abera, Boshuwenda Andre  Chuma, Kalimuthu Senthilkumar, Arisoa Rajaona, Ando Razafindrazaka, Kazuki Saito and Sabine Stuerz<br><b>Year:</b> 2020<br><b>Journal:</b> Journal of Agronomy and Crop Science<br><b>DOI:</b> DOI: 10.1111/jac.12421<br><b>Study Country:</b> East Africa<br><b>Latitude:</b> 1.9577<br><b>Longitude:</b> 37.2972<br><b>Digital Ag:</b> Decision Support System (DSS)<br><b>CSA Practices:</b> nutrient management; crop planting adjustment; crop variety selection<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Infrastructure & advisory limitations; Technology suitability and data gaps; Limited technology access & connectivity<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> cost (access)<br></div>`)[0];
+                popup_6bb783d09b4009020cbc99e4da4687fd.setContent(html_c296ffd36e597a88ed47da8941b491e7);
+            
+        
+
+        marker_b30a80444c7d22e12dfee51f7a812492.bindPopup(popup_6bb783d09b4009020cbc99e4da4687fd)
+        ;
+
+        
+    
+    
+            var marker_b5f73b1aa97b0004467a17ec85dc165c = L.marker(
+                [10.08, 8.67],
+                {
+}
+            ).addTo(feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618);
+        
+    
+            var icon_f39f48b71a58a71d8386d9cc690a88b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b5f73b1aa97b0004467a17ec85dc165c.setIcon(icon_f39f48b71a58a71d8386d9cc690a88b1);
+        
+    
+        var popup_39365b1bf979cc717818270150d75fab = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_491a3f344ba3a695c42583f84b8f212b = $(`<div id="html_491a3f344ba3a695c42583f84b8f212b" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Maertens 2023<br><b>Title:</b> Sustainable maize intensification through site-specific nutrient management advice: Experimental evidence from Nigeria<br><b>Authors:</b> Maertens, M., Oyinbo, O., Abdoulaye, T., & Chamberlin, J. <br><b>Year:</b> 2023<br><b>Journal:</b> Food Policy<br><b>DOI:</b> https://doi.org/10.1016/j.foodpol.2023.102546<br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 10.08<br><b>Longitude:</b> 8.67<br><b>Digital Ag:</b> Mobile phone; Decision Support System (DSS); Precision Agriculture<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> increase in fertilizer use<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_39365b1bf979cc717818270150d75fab.setContent(html_491a3f344ba3a695c42583f84b8f212b);
+            
+        
+
+        marker_b5f73b1aa97b0004467a17ec85dc165c.bindPopup(popup_39365b1bf979cc717818270150d75fab)
+        ;
+
+        
+    
+    
+            var marker_238faa9539fcd52f486dde716b14abe5 = L.marker(
+                [14.0, 15.0],
+                {
+}
+            ).addTo(feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618);
+        
+    
+            var icon_b683e9f85053f18a61b97b27c19bd0d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_238faa9539fcd52f486dde716b14abe5.setIcon(icon_b683e9f85053f18a61b97b27c19bd0d5);
+        
+    
+        var popup_59274573565780bac191e6f1a3d324a8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5ead585af4fc5e403a65b8d832fdf46d = $(`<div id="html_5ead585af4fc5e403a65b8d832fdf46d" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Oyinbo 2022<br><b>Title:</b> Digital extension, price risk, and farm performance: experimental evidence from Nigeria<br><b>Authors:</b> Oyakhilomen Oyinbo, Jordan Chamberlin, Tahirou Abdoulaye, Miet Maertens<br><b>Year:</b> 2022<br><b>Journal:</b> American Journal of Agricultural Economics<br><b>DOI:</b> DOI: 10.1111/ajae.1224<br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 14.0<br><b>Longitude:</b> 15.0<br><b>Digital Ag:</b> Decision Support System (DSS); Precision Agriculture<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Cost & resource constraints; Labor, work & gender issues<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> Fertilizer use efficiency may not increase farm income<br><b>Equity and Inclusion:</b> cost (access), focus on inequalities (income)<br></div>`)[0];
+                popup_59274573565780bac191e6f1a3d324a8.setContent(html_5ead585af4fc5e403a65b8d832fdf46d);
+            
+        
+
+        marker_238faa9539fcd52f486dde716b14abe5.bindPopup(popup_59274573565780bac191e6f1a3d324a8)
+        ;
+
+        
+    
+    
+            var marker_69c8cec88d26841275c2a58390f58d11 = L.marker(
+                [31.05, 75.35],
+                {
+}
+            ).addTo(feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618);
+        
+    
+            var icon_66bc4ceac256b42337a6cab74c108fd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69c8cec88d26841275c2a58390f58d11.setIcon(icon_66bc4ceac256b42337a6cab74c108fd5);
+        
+    
+        var popup_a8688e74800c4879afe9528cf1a0304c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2cd56ffb4a0add0001e655303a88cc7c = $(`<div id="html_2cd56ffb4a0add0001e655303a88cc7c" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Yadav 2024<br><b>Title:</b> A Prototype Decision Support System for Tree Selection and Plantation with a Focus on Agroforestry and Ecosystem Services<br><b>Authors:</b> Neelesh Yadav, Shrey Rakholia, and Reuven Yosef<br><b>Year:</b> 2024<br><b>Journal:</b> Forests<br><b>DOI:</b> 10.3390/f15071219<br><b>Study Country:</b> India<br><b>Latitude:</b> 31.05<br><b>Longitude:</b> 75.35<br><b>Digital Ag:</b> Decision Support System (DSS)<br><b>CSA Practices:</b> agroforestry; silvopasture; riparian buffers<br><b>Drivers (CSA):</b> Weather & climate resilience<br><b>Barriers (CSA):</b> Farmer education & skills; Farm-related challenges & trade-offs<br><b>Drivers (Digital Ag):</b> CSA Integration<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions; Improved soil health<br><b>Mitigation Co-benefits:</b> Biodiversity & ecosystem services<br><b>Mitigation Tradeoffs:</b> exotic species use dependence; pest problems<br><b>Equity and Inclusion:</b> community development, local participation<br></div>`)[0];
+                popup_a8688e74800c4879afe9528cf1a0304c.setContent(html_2cd56ffb4a0add0001e655303a88cc7c);
+            
+        
+
+        marker_69c8cec88d26841275c2a58390f58d11.bindPopup(popup_a8688e74800c4879afe9528cf1a0304c)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618.addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+        
+    
+            var feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c = L.featureGroup.subGroup(
+                feature_group_03c64a18c2a9810bc30597c2983ce0f0
+            );
+        
+    
+            var marker_74c4ff8aaa5deadcb9c3d5e26f002e61 = L.marker(
+                [27.6947, 85.3461],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_0e6f8d4390028ccf9357f79c7213ecc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_74c4ff8aaa5deadcb9c3d5e26f002e61.setIcon(icon_0e6f8d4390028ccf9357f79c7213ecc9);
+        
+    
+        var popup_aa66715141e049e8cd4c5458b4b24da4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ad34fc3430de38c4d87dd1c0e852f24e = $(`<div id="html_ad34fc3430de38c4d87dd1c0e852f24e" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Aoki 2024<br><b>Title:</b> Exploring the Impact of IoT and Weather Data Utilization on Agricultural Productivity in Nepal<br><b>Authors:</b> Eiji Aoki, Hiroshi Nozaki, Raunak Baskota<br><b>Year:</b> 2024<br><b>Journal:</b> Published in LNDECT 225, part of INCoS 2024 proceeding<br><b>DOI:</b> https://doi.org/10.1007/978-3-031-72322-3_26<br><b>Study Country:</b> Nepal<br><b>Latitude:</b> 27.6947<br><b>Longitude:</b> 85.3461<br><b>Digital Ag:</b> Mobile phone; Sensors; Precision Agriculture<br><b>CSA Practices:</b> irrigation management; soil health monitoring<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Access to inputs & technology; Cost & resource constraints; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Technology suitability and data gaps; Farmer education & technical capacity<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Efficient resource use; Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> high cost of technology; need for dependable connectivity<br><b>Equity and Inclusion:</b> age, education<br></div>`)[0];
+                popup_aa66715141e049e8cd4c5458b4b24da4.setContent(html_ad34fc3430de38c4d87dd1c0e852f24e);
+            
+        
+
+        marker_74c4ff8aaa5deadcb9c3d5e26f002e61.bindPopup(popup_aa66715141e049e8cd4c5458b4b24da4)
+        ;
+
+        
+    
+    
+            var marker_ddeb9d9ee2d8eaefcba2ff19c0e3657b = L.marker(
+                [11.7471, 8.5247],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_82b504e471fa7fa4f6114b70b80a11b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ddeb9d9ee2d8eaefcba2ff19c0e3657b.setIcon(icon_82b504e471fa7fa4f6114b70b80a11b6);
+        
+    
+        var popup_6fe621e1a9c451291d66e6abd5ec92fd = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ab38e1e71ca925da937e2299c37d3cc6 = $(`<div id="html_ab38e1e71ca925da937e2299c37d3cc6" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Arouna 2020<br><b>Title:</b> One Size Fits All? Experimental Evidence on the Digital Delivery of Personalized Extension Advice in Nigeria<br><b>Authors:</b> Aminou Arouna, Jeffrey D. Michler, Wilfried G. Yergo, Kazuki Saito<br><b>Year:</b> 2020<br><b>Journal:</b> American Journal of Agricultural Economics<br><b>DOI:</b> https://doi.org/10.1111/ajae.12151 <br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 11.7471<br><b>Longitude:</b> 8.5247<br><b>Digital Ag:</b> Decision Support System (DSS); Mobile phone<br><b>CSA Practices:</b> nutrient management; CSA knowledge and information<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> CSA uncertainty & climate risks<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Limited technology access & connectivity; Farmer education & technical capacity; Infrastructure & advisory limitations<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> profit increased with fertilizer subsidies; additional training required for upscaling<br><b>Equity and Inclusion:</b> focus on inequalities (in access to information)<br></div>`)[0];
+                popup_6fe621e1a9c451291d66e6abd5ec92fd.setContent(html_ab38e1e71ca925da937e2299c37d3cc6);
+            
+        
+
+        marker_ddeb9d9ee2d8eaefcba2ff19c0e3657b.bindPopup(popup_6fe621e1a9c451291d66e6abd5ec92fd)
+        ;
+
+        
+    
+    
+            var marker_70a7536edd575969b52d258dd1b3f7cc = L.marker(
+                [0.3606, 36.782],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_1ad0b9a661324ee45898a0459ef5f6f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_70a7536edd575969b52d258dd1b3f7cc.setIcon(icon_1ad0b9a661324ee45898a0459ef5f6f5);
+        
+    
+        var popup_a9d7aa39abffd37ceef02828a84aebc4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3419dc72b07f83b79f46ddb8dbecea47 = $(`<div id="html_3419dc72b07f83b79f46ddb8dbecea47" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Cox 2016<br><b>Title:</b> ICT supported extension services in conservation agriculture information access for small holder farmers in Laikipia County, Kenya<br><b>Authors:</b> Achora Janet Cox, Haroon Sseguya <br><b>Year:</b> 2015<br><b>Journal:</b> 2015 IEEE International Symposium on Technology in Society (ISTAS) <br><b>DOI:</b> ISBN: 978-1-4799-8283-7<br><b>Study Country:</b> Kenya<br><b>Latitude:</b> 0.3606<br><b>Longitude:</b> 36.782<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> reduced or no tillage; cover crops; crop rotation; climate and weather information<br><b>Drivers (CSA):</b> Market access & demand; Knowledge, education & training<br><b>Barriers (CSA):</b> Access to inputs & technology; Cost & resource constraints; Agricultural extension & advisory services; Farmer education & skills<br><b>Drivers (Digital Ag):</b> CSA Integration; Government & institutional trust; Market & information access<br><b>Barriers (Digital Ag):</b> Farmer education & technical capacity; Awareness & trust barriers; Limited technology access & connectivity; Infrastructure & advisory limitations<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Social & knowledge networks<br><b>Mitigation Tradeoffs:</b> increase digital divide; over-reliance on technology; misinterpreting information<br><b>Equity and Inclusion:</b> gender, community development<br></div>`)[0];
+                popup_a9d7aa39abffd37ceef02828a84aebc4.setContent(html_3419dc72b07f83b79f46ddb8dbecea47);
+            
+        
+
+        marker_70a7536edd575969b52d258dd1b3f7cc.bindPopup(popup_a9d7aa39abffd37ceef02828a84aebc4)
+        ;
+
+        
+    
+    
+            var marker_128485a70379aa68af0b4a7110d3fae7 = L.marker(
+                [8.0, -1.02319],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_bb277de69d9c6361b94c3f9051c43f46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_128485a70379aa68af0b4a7110d3fae7.setIcon(icon_bb277de69d9c6361b94c3f9051c43f46);
+        
+    
+        var popup_f75afcfce34f2ad25f4f461f1402904c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f7124ea356d2ba8ddfc20846463362db = $(`<div id="html_f7124ea356d2ba8ddfc20846463362db" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Damba 2024<br><b>Title:</b> Constructing A Climate-Smart readiness index for smallholder farmers: The case of prioritized bundles of climate information services and climate smart agriculture in Ghana<br><b>Authors:</b> Osman Tahidu Damba, Collins Odhiambo Ageyo, Fred Kizito, Powell Mponela, Stephen Yeboah, Victor Attuquaye Clottey, Birgitta Adoma Oppong-Mensah, Jules Bayala, Faustina Obeng Adomaa, Mustapha Alasan Dalaa, Francisca Martey, Sophia Huyer, Robert Zougmore, Ghislain Tepa-Yotto, Manuele Tamo <br><b>Year:</b> 2024<br><b>Journal:</b> Climate Services<br><b>DOI:</b> 10.1016/j.cliser.2024.100453<br><b>Study Country:</b> Ghana<br><b>Latitude:</b> 8.0<br><b>Longitude:</b> -1.02319<br><b>Digital Ag:</b> Mobile phone; Precision Agriculture<br><b>CSA Practices:</b> agroforestry; integrated pest management; climate and weather information services<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency; Weather & climate resilience<br><b>Barriers (CSA):</b> Cost & resource constraints; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Market & information access; CSA Integration<br><b>Barriers (Digital Ag):</b> Farmer education & technical capacity; Limited technology access & connectivity; Cost & economic concerns; Infrastructure & advisory limitations<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Improved farm productivity & crop yield; Economic & livelihood benefits; Pest & disease management<br><b>Mitigation Tradeoffs:</b> high initial cost of technology; increased demand on labor<br><b>Equity and Inclusion:</b> age, gender, participatory approach<br></div>`)[0];
+                popup_f75afcfce34f2ad25f4f461f1402904c.setContent(html_f7124ea356d2ba8ddfc20846463362db);
+            
+        
+
+        marker_128485a70379aa68af0b4a7110d3fae7.bindPopup(popup_f75afcfce34f2ad25f4f461f1402904c)
+        ;
+
+        
+    
+    
+            var marker_d51b822bc1eea04cf4baddffdd3fa2b8 = L.marker(
+                [22.0, 77.0],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_422207a3679dc7dfb92d905942941949 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d51b822bc1eea04cf4baddffdd3fa2b8.setIcon(icon_422207a3679dc7dfb92d905942941949);
+        
+    
+        var popup_da293b9a124b728ef901e0d296bdc4ee = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_26c4b0f2aae79e7b8b789e9524588b9a = $(`<div id="html_26c4b0f2aae79e7b8b789e9524588b9a" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Das 2022<br><b>Title:</b> Effectiveness and upscaling potential of climate smart agriculture interventions: Farmers' participatory prioritization and livelihood indicators as its determinants<br><b>Authors:</b> Usha Das, M.A. Ansari, Souvik Ghosh<br><b>Year:</b> 2023<br><b>Journal:</b> Agricultural systems<br><b>DOI:</b> 103515<br><b>Study Country:</b> India<br><b>Latitude:</b> 22.0<br><b>Longitude:</b> 77.0<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> CSA knowledge and information<br><b>Drivers (CSA):</b> Productivity & economic viability; Weather & climate resilience<br><b>Barriers (CSA):</b> CSA uncertainty & climate risks<br><b>Drivers (Digital Ag):</b> CSA Integration<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Social & knowledge networks<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> traditional knowledge<br></div>`)[0];
+                popup_da293b9a124b728ef901e0d296bdc4ee.setContent(html_26c4b0f2aae79e7b8b789e9524588b9a);
+            
+        
+
+        marker_d51b822bc1eea04cf4baddffdd3fa2b8.bindPopup(popup_da293b9a124b728ef901e0d296bdc4ee)
+        ;
+
+        
+    
+    
+            var marker_aa8b0c393c108c323c5cab63c29c9d81 = L.marker(
+                [11.12712, 78.65689],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_7dc8388a24246061056674b80fad30ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aa8b0c393c108c323c5cab63c29c9d81.setIcon(icon_7dc8388a24246061056674b80fad30ba);
+        
+    
+        var popup_fc16d75239b102682e9deaf013cb740e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_190a4c7530abb4ee8b5a4cb15f03ed1a = $(`<div id="html_190a4c7530abb4ee8b5a4cb15f03ed1a" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Dhanya 2022<br><b>Title:</b> Impacts and Climate Change Adaptation of Agrometeorological Services among the Maize Farmers of West Tamil Nadu<br><b>Authors:</b> Dhanya, P.; Geethalakshmi, V.; Ramanathan, S.; Senthilraja, K.; Sreeraj, P.; Pradipa, C.; Bhuvaneshwari, K.; Vengateswari, M.; Dheebakaran, G.; Kokilavani, S.; Karthikeyan, R.; Sathyamoorthy, N.K.<br><b>Year:</b> 2022<br><b>Journal:</b> AgriEngineering<br><b>DOI:</b> 10.3390/agriengineering4040065<br><b>Study Country:</b> India, West Tamil Nadu<br><b>Latitude:</b> 11.12712<br><b>Longitude:</b> 78.65689<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> weather and climate services<br><b>Drivers (CSA):</b> Weather & climate resilience<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_fc16d75239b102682e9deaf013cb740e.setContent(html_190a4c7530abb4ee8b5a4cb15f03ed1a);
+            
+        
+
+        marker_aa8b0c393c108c323c5cab63c29c9d81.bindPopup(popup_fc16d75239b102682e9deaf013cb740e)
+        ;
+
+        
+    
+    
+            var marker_c99536842741eb3890aa4694d1b31f01 = L.marker(
+                [11.25, -0.00028],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_7a2cf58426216bdbbe23b6e5cad9abcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c99536842741eb3890aa4694d1b31f01.setIcon(icon_7a2cf58426216bdbbe23b6e5cad9abcf);
+        
+    
+        var popup_8ee0c28000c479a48161163fdab93258 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_834fb5c8a62610fa3f909a54a55676c3 = $(`<div id="html_834fb5c8a62610fa3f909a54a55676c3" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Djido 2021<br><b>Title:</b> To what extent do weather and climate information services drive the adoption of climate-smart agriculture practices in Ghana?<br><b>Authors:</b> Djido, Abdoulaye; ZougmorÃ, Robert B.; Houessionon, Prosper; OuÃdraogo, Mathieu; Ouedraogo, Issa; Diouf, Ndeye Seynabou<br><b>Year:</b> 2021<br><b>Journal:</b> Climate Risk Management<br><b>DOI:</b> 10.1016/j.crm.2021.100309<br><b>Study Country:</b> Ghana<br><b>Latitude:</b> 11.25<br><b>Longitude:</b> -0.00028<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> erosion control; integrated pest management; water management; crop rotation; weather and climate information services<br><b>Drivers (CSA):</b> Weather & climate resilience<br><b>Barriers (CSA):</b> Agricultural extension & advisory services<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Climate resilience & adaptation<br><b>Mitigation Tradeoffs:</b> No change in adoption of CSA<br><b>Equity and Inclusion:</b> gender, age<br></div>`)[0];
+                popup_8ee0c28000c479a48161163fdab93258.setContent(html_834fb5c8a62610fa3f909a54a55676c3);
+            
+        
+
+        marker_c99536842741eb3890aa4694d1b31f01.bindPopup(popup_8ee0c28000c479a48161163fdab93258)
+        ;
+
+        
+    
+    
+            var marker_e5d746071ebdf27e244bff263e6c747e = L.marker(
+                [-13.25, 34.3],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_4bffdb605adb36d0de32fd57391cff34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e5d746071ebdf27e244bff263e6c747e.setIcon(icon_4bffdb605adb36d0de32fd57391cff34);
+        
+    
+        var popup_9ed59ee94121958097d93e4aa4d52b12 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_41ceadaad795e5cba36686fe9acbfbd1 = $(`<div id="html_41ceadaad795e5cba36686fe9acbfbd1" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Haswell 2024<br><b>Title:</b> Can ICT-enabled knowledge acquisition bridge the gap in enhancing the adoption of multipurpose agroforestry tree species (MPTS) in Malawi?<br><b>Authors:</b> Haswell, C.; Khataza, R.<br><b>Year:</b> 2024<br><b>Journal:</b> Agroforestry Systems<br><b>DOI:</b> 10.1007/s10457-024-01033-3<br><b>Study Country:</b> Malawi<br><b>Latitude:</b> -13.25<br><b>Longitude:</b> 34.3<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> CSA knowledge and information<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> CSA Integration; Market & information access<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Biodiversity & ecosystem services; Climate resilience & adaptation<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> gender<br></div>`)[0];
+                popup_9ed59ee94121958097d93e4aa4d52b12.setContent(html_41ceadaad795e5cba36686fe9acbfbd1);
+            
+        
+
+        marker_e5d746071ebdf27e244bff263e6c747e.bindPopup(popup_9ed59ee94121958097d93e4aa4d52b12)
+        ;
+
+        
+    
+    
+            var marker_0d145c73b63a7911cb26a1f76a63a73f = L.marker(
+                [5.5, 0.15],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_4c2942903808a4dd2fea92b03920ac83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d145c73b63a7911cb26a1f76a63a73f.setIcon(icon_4c2942903808a4dd2fea92b03920ac83);
+        
+    
+        var popup_9481c00de6b353902985a07f61041685 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9b941499f6018ae05e53ae89384eb126 = $(`<div id="html_9b941499f6018ae05e53ae89384eb126" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Jones 2023<br><b>Title:</b> Mobile agricultural extension delivery and climate-smart agricultural practices in a time of a pandemic: Evidence from southern Ghana<br><b>Authors:</b> Jones, EO; Tham-Agyekum, EK; Ankuyi, F; Ankrah, DA; Akaba, S; Shafiwu, AB; Richard, FN<br><b>Year:</b> 2023<br><b>Journal:</b> ENVIRONMENTAL AND SUSTAINABILITY INDICATORS<br><b>DOI:</b> 10.1016/j.indic.2023.100274<br><b>Study Country:</b> southern Ghana<br><b>Latitude:</b> 5.5<br><b>Longitude:</b> 0.15<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> CSA general (no specific practice mentioned)<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Agricultural extension & advisory services; Cost & resource constraints; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Not described<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> gender, age<br></div>`)[0];
+                popup_9481c00de6b353902985a07f61041685.setContent(html_9b941499f6018ae05e53ae89384eb126);
+            
+        
+
+        marker_0d145c73b63a7911cb26a1f76a63a73f.bindPopup(popup_9481c00de6b353902985a07f61041685)
+        ;
+
+        
+    
+    
+            var marker_0d9445b0b2826c7c76c9ce909a6b1a8a = L.marker(
+                [33.0, 65.0],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_0ec02c8268e80d5b38c67da07bdc1d40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d9445b0b2826c7c76c9ce909a6b1a8a.setIcon(icon_0ec02c8268e80d5b38c67da07bdc1d40);
+        
+    
+        var popup_5deb9018fc3cd55838a82ffdd6eb1e8a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_277797e257a86b9e2abe51484e83fdbf = $(`<div id="html_277797e257a86b9e2abe51484e83fdbf" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Khan 2021<br><b>Title:</b> Toward cleaner production: Can mobile phone technology help reduce inorganic fertilizer application? evidence using a national level dataset<br><b>Authors:</b> Khan, N.; Ray, R.L.; Kassem, H.S.; Ihtisham, M.; Asongu, S.A.; Ansah, S.; Zhang, S.<br><b>Year:</b> 2021<br><b>Journal:</b> Land<br><b>DOI:</b> 10.3390/land10101023<br><b>Study Country:</b> Afghanistan<br><b>Latitude:</b> 33.0<br><b>Longitude:</b> 65.0<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> vulnerable population (access)<br></div>`)[0];
+                popup_5deb9018fc3cd55838a82ffdd6eb1e8a.setContent(html_277797e257a86b9e2abe51484e83fdbf);
+            
+        
+
+        marker_0d9445b0b2826c7c76c9ce909a6b1a8a.bindPopup(popup_5deb9018fc3cd55838a82ffdd6eb1e8a)
+        ;
+
+        
+    
+    
+            var marker_9003a66260f342762b5936af401a0533 = L.marker(
+                [30.3753, 69.3451],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_527ca47f314c6a75b1d459137d39b651 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9003a66260f342762b5936af401a0533.setIcon(icon_527ca47f314c6a75b1d459137d39b651);
+        
+    
+        var popup_5bea77d0f9a0f59321bc4f99b379e925 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_831b062a2ad6e8df671b1008d92f9fd8 = $(`<div id="html_831b062a2ad6e8df671b1008d92f9fd8" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Khan 2021<br><b>Title:</b> Farm-level autonomous adaptation to climate change and its impact on crop productivity: evidence from Pakistan<br><b>Authors:</b> Khan, NA; Gong, ZW; Shah, AA; Abid, M; Khanal, U<br><b>Year:</b> 2021<br><b>Journal:</b> ENVIRONMENT DEVELOPMENT AND SUSTAINABILITY<br><b>DOI:</b> 10.1007/s10668-021-01978-w<br><b>Study Country:</b> Pakistan<br><b>Latitude:</b> 30.3753<br><b>Longitude:</b> 69.3451<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> weather and climate information services; irrigation management; changing planting dates; nutrient management<br><b>Drivers (CSA):</b> Weather & climate resilience<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> cost (access), education<br></div>`)[0];
+                popup_5bea77d0f9a0f59321bc4f99b379e925.setContent(html_831b062a2ad6e8df671b1008d92f9fd8);
+            
+        
+
+        marker_9003a66260f342762b5936af401a0533.bindPopup(popup_5bea77d0f9a0f59321bc4f99b379e925)
+        ;
+
+        
+    
+    
+            var marker_429442e6594c36b8e419bbffda7b4458 = L.marker(
+                [11.05982, 78.38745],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_0f4ea06468e865dec1d833976a62d4bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_429442e6594c36b8e419bbffda7b4458.setIcon(icon_0f4ea06468e865dec1d833976a62d4bb);
+        
+    
+        var popup_dee809582a29b6a462d85c4e368a367b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_12b5696707b37cd6c1e7427fc0bed78f = $(`<div id="html_12b5696707b37cd6c1e7427fc0bed78f" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Kulat 2022<br><b>Title:</b> Assessing Impact of Carbon-smart Farming Practices in Rice with Mobile Crowdsensing<br><b>Authors:</b> Rushikesh Kulat, Mariappan Sakkan, Prachin Jain, Sanat Sarangi, Srinivasu Pappula<br><b>Year:</b> 2022<br><b>Journal:</b> 2022 IEEE Region 10 Symposium (TENSYMP)<br><b>DOI:</b> 10.1109/TENSYMP54529.2022.9864367<br><b>Study Country:</b> India<br><b>Latitude:</b> 11.05982<br><b>Longitude:</b> 78.38745<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> reduced or no tillage<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Not described<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_dee809582a29b6a462d85c4e368a367b.setContent(html_12b5696707b37cd6c1e7427fc0bed78f);
+            
+        
+
+        marker_429442e6594c36b8e419bbffda7b4458.bindPopup(popup_dee809582a29b6a462d85c4e368a367b)
+        ;
+
+        
+    
+    
+            var marker_ebad0e5c622696aee6d732fa1cc6a3e8 = L.marker(
+                [10.08, 8.67],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_0495eb8ecdf7c18f39dbd69a9d4a5fa6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ebad0e5c622696aee6d732fa1cc6a3e8.setIcon(icon_0495eb8ecdf7c18f39dbd69a9d4a5fa6);
+        
+    
+        var popup_4400c1e049c1a4a5f271aaded3f1cd7a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_19bd9a8d5c2a31fd1ce05d868a878a04 = $(`<div id="html_19bd9a8d5c2a31fd1ce05d868a878a04" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Maertens 2023<br><b>Title:</b> Sustainable maize intensification through site-specific nutrient management advice: Experimental evidence from Nigeria<br><b>Authors:</b> Maertens, M., Oyinbo, O., Abdoulaye, T., & Chamberlin, J. <br><b>Year:</b> 2023<br><b>Journal:</b> Food Policy<br><b>DOI:</b> https://doi.org/10.1016/j.foodpol.2023.102546<br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 10.08<br><b>Longitude:</b> 8.67<br><b>Digital Ag:</b> Mobile phone; Decision Support System (DSS); Precision Agriculture<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> increase in fertilizer use<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_4400c1e049c1a4a5f271aaded3f1cd7a.setContent(html_19bd9a8d5c2a31fd1ce05d868a878a04);
+            
+        
+
+        marker_ebad0e5c622696aee6d732fa1cc6a3e8.bindPopup(popup_4400c1e049c1a4a5f271aaded3f1cd7a)
+        ;
+
+        
+    
+    
+            var marker_f9900c102514340cd7c63b0547fef29d = L.marker(
+                [14.5, -15.5],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_66e24b1ee3f9bd9eebe5f05fe3084844 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f9900c102514340cd7c63b0547fef29d.setIcon(icon_66e24b1ee3f9bd9eebe5f05fe3084844);
+        
+    
+        var popup_29e8a44cee25c2dafde272117546aade = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_273c85c246f71301079e46c1387253c4 = $(`<div id="html_273c85c246f71301079e46c1387253c4" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> McKune 2018<br><b>Title:</b> Reaching the end goal: Do interventions to improve climate information services lead to greater food security?<br><b>Authors:</b> McKune, S., Poulsen, L., Russo, S., Devereux, T., Faas, S., McOmber, C. and Ryley, T.<br><b>Year:</b> 2018<br><b>Journal:</b> Climate Risk Management<br><b>DOI:</b> https://doi.org/10.1016/j.crm.2018.08.002<br><b>Study Country:</b> Senegal and Kenya<br><b>Latitude:</b> 14.5<br><b>Longitude:</b> -15.5<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> Manure management, Intercropping, Crop rotation, Agroforestry, reduced or no tillage, Rotational grazing, Improved Seed Varieties, Crop diversification<br><b>Drivers (CSA):</b> Knowledge, education & training<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Not described<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> gender; community development<br></div>`)[0];
+                popup_29e8a44cee25c2dafde272117546aade.setContent(html_273c85c246f71301079e46c1387253c4);
+            
+        
+
+        marker_f9900c102514340cd7c63b0547fef29d.bindPopup(popup_29e8a44cee25c2dafde272117546aade)
+        ;
+
+        
+    
+    
+            var marker_a749fb6f8d1791f044d4e428ec5bf7b9 = L.marker(
+                [28.5306, 30.8958],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_94f11877f678bc974b8b0d9f1e5c58a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a749fb6f8d1791f044d4e428ec5bf7b9.setIcon(icon_94f11877f678bc974b8b0d9f1e5c58a3);
+        
+    
+        var popup_641a2c3f5f7e65a0414380832c547910 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_95f8e7ee8d5974e2f8be55d319fb7805 = $(`<div id="html_95f8e7ee8d5974e2f8be55d319fb7805" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Mthethwa 2022<br><b>Title:</b> The Determinants of Adoption and Intensity of Climate-Smart Agricultural Practices among Smallholder Maize Farmers<br><b>Authors:</b> Mthethwa, K.N., Ngidi, M.S.C., Ojo, T.O. and Hlatshwayo, S.I.<br><b>Year:</b> 2022<br><b>Journal:</b> Sustainability<br><b>DOI:</b> https://doi.org/10.3390/su142416926 <br><b>Study Country:</b> South Africa<br><b>Latitude:</b> 28.5306<br><b>Longitude:</b> 30.8958<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> information on market prices and farming inputs; crop rotation; reduced or no tillage; organic farming; site-specific nutrient application; cover crops (maintain soil moisture) <br><b>Drivers (CSA):</b> Weather & climate resilience; Knowledge, education & training; Productivity & economic viability<br><b>Barriers (CSA):</b> Farmer education & skills; Farm-related challenges & trade-offs<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Not described<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> cost (access), education<br></div>`)[0];
+                popup_641a2c3f5f7e65a0414380832c547910.setContent(html_95f8e7ee8d5974e2f8be55d319fb7805);
+            
+        
+
+        marker_a749fb6f8d1791f044d4e428ec5bf7b9.bindPopup(popup_641a2c3f5f7e65a0414380832c547910)
+        ;
+
+        
+    
+    
+            var marker_aba4b0c00af3552ac9bd89fd9fb36859 = L.marker(
+                [-3.39979, 37.67325],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_26d01800ccc91d46bf2fb1cb40861b70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aba4b0c00af3552ac9bd89fd9fb36859.setIcon(icon_26d01800ccc91d46bf2fb1cb40861b70);
+        
+    
+        var popup_6d821d8d0de8a2369d2bfe5db5449018 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_786ce6b10d65229feb3af15add13a546 = $(`<div id="html_786ce6b10d65229feb3af15add13a546" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Mwikamba 2024<br><b>Title:</b> Determinants of the intensity of adoption of climate-smart horticulture practices in Taita-Taveta County, Kenya<br><b>Authors:</b> Mwikamba, J.N., Otieno, D.J. and Oluoch-Kosura, W.<br><b>Year:</b> 2024<br><b>Journal:</b> Cogent Food & Agriculture<br><b>DOI:</b> https://doi.org/10.1080/23311932.2024.2328431<br><b>Study Country:</b> Kenya<br><b>Latitude:</b> -3.39979<br><b>Longitude:</b> 37.67325<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> crop selection; nutrient management; cover crops; crop rotation; agroforestry; crop diversification; reduced or no tillage; integrated pest management; contour and terrace cultivation<br><b>Drivers (CSA):</b> Market access & demand; Productivity & economic viability; Knowledge, education & training<br><b>Barriers (CSA):</b> Farm-related challenges & trade-offs<br><b>Drivers (Digital Ag):</b> CSA Integration; Government & institutional trust<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Climate resilience & adaptation<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_6d821d8d0de8a2369d2bfe5db5449018.setContent(html_786ce6b10d65229feb3af15add13a546);
+            
+        
+
+        marker_aba4b0c00af3552ac9bd89fd9fb36859.bindPopup(popup_6d821d8d0de8a2369d2bfe5db5449018)
+        ;
+
+        
+    
+    
+            var marker_454b17fd30a84fd7284cd6cb459a2d17 = L.marker(
+                [14.4974, 14.4524],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_7c3b9fce15f7a86047da23924db0a419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_454b17fd30a84fd7284cd6cb459a2d17.setIcon(icon_7c3b9fce15f7a86047da23924db0a419);
+        
+    
+        var popup_282fa65d9301520a6ef626e30d4b998a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a9957cb291073bdfd78c52d329943b69 = $(`<div id="html_a9957cb291073bdfd78c52d329943b69" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Ouedraogo 2021<br><b>Title:</b> Utility and triggers in uptake of agricultural weather and climate information services in senegal, west africa<br><b>Authors:</b> Issa Ouedraogo, Ndèye Seynabou Diouf, Gnalenba Ablouka, Robert B. Zougmoré and Anthony Whitbread<br><b>Year:</b> 2021<br><b>Journal:</b> Atmosphere<br><b>DOI:</b> https://doi.org/10.3390/atmos12111515 <br><b>Study Country:</b> Senegal<br><b>Latitude:</b> 14.4974<br><b>Longitude:</b> 14.4524<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> changes to fertilizer and manure application; changes to crop selection<br><b>Drivers (CSA):</b> Knowledge, education & training<br><b>Barriers (CSA):</b> Access to inputs & technology; Farm-related challenges & trade-offs; CSA uncertainty & climate risks<br><b>Drivers (Digital Ag):</b> Farmer characteristics & education; Farmer support & organizational networks; Market & information access<br><b>Barriers (Digital Ag):</b> Awareness & trust barriers<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Efficient resource use; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> decreased crop productivity<br><b>Equity and Inclusion:</b> education, age, gender<br></div>`)[0];
+                popup_282fa65d9301520a6ef626e30d4b998a.setContent(html_a9957cb291073bdfd78c52d329943b69);
+            
+        
+
+        marker_454b17fd30a84fd7284cd6cb459a2d17.bindPopup(popup_282fa65d9301520a6ef626e30d4b998a)
+        ;
+
+        
+    
+    
+            var marker_52fdbd031c77922255b4cfff48f448ed = L.marker(
+                [25.8483, 88.9414],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_aff395ffb45cbbd4d8f0bd935a7ecf68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_52fdbd031c77922255b4cfff48f448ed.setIcon(icon_aff395ffb45cbbd4d8f0bd935a7ecf68);
+        
+    
+        var popup_f30c53e7e20954eeb96b760d8c132220 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_eebd18a406f73b33f517e6bffbbd7f81 = $(`<div id="html_eebd18a406f73b33f517e6bffbbd7f81" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Rahaman 2020<br><b>Title:</b> Climate information services and their potential on adaptation and mitigation: Experiences from flood affected regions in Bangladesh<br><b>Authors:</b> Muhammad Abdur Rahaman, Mijanur Rahman Bijoy, Tapas Ranjan Chakraborty, A. S. M. Imrul Kayes, Muhammad Arifur Rahman and Walter Leal Filho<br><b>Year:</b> 2020<br><b>Journal:</b> Handbook of Climate Services<br><b>DOI:</b> https://doi.org/10.1007/978-3-030-36875-3_24<br><b>Study Country:</b> Bangladesh<br><b>Latitude:</b> 25.8483<br><b>Longitude:</b> 88.9414<br><b>Digital Ag:</b> Mobile phone<br><b>CSA Practices:</b> Climate and weather information services; nutrient management; irrigation management<br><b>Drivers (CSA):</b> Knowledge, education & training<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Nutrient use efficiency; Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Climate resilience & adaptation<br><b>Mitigation Tradeoffs:</b> Not described<br><b>Equity and Inclusion:</b> gender<br></div>`)[0];
+                popup_f30c53e7e20954eeb96b760d8c132220.setContent(html_eebd18a406f73b33f517e6bffbbd7f81);
+            
+        
+
+        marker_52fdbd031c77922255b4cfff48f448ed.bindPopup(popup_f30c53e7e20954eeb96b760d8c132220)
+        ;
+
+        
+    
+    
+            var marker_d0a72a85b787e50b0d32199f1fbc2972 = L.marker(
+                [9.36, 0.1495],
+                {
+}
+            ).addTo(feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c);
+        
+    
+            var icon_8faf684833e7a735ce08965ef52efec8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d0a72a85b787e50b0d32199f1fbc2972.setIcon(icon_8faf684833e7a735ce08965ef52efec8);
+        
+    
+        var popup_34d7a1a3d803926a5227f910815299cf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1d65e86aee7892f19e6790d905c8a2a8 = $(`<div id="html_1d65e86aee7892f19e6790d905c8a2a8" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Sutanto 2022<br><b>Title:</b> The Role of Soil Moisture Information in Developing Robust Climate Services for Smallholder Farmers: Evidence from Ghana<br><b>Authors:</b> Samuel J. Sutanto, Spyridon Paparrizos, Gordana Kranjac-Berisavljevic, Baba M. Jamaldeen, Abdulai K. Issahaku, Bizoola Z. Gandaa, Iwan Supit, and Erik van Slobbe<br><b>Year:</b> 2022<br><b>Journal:</b> Agronomy<br><b>DOI:</b> 10.3390/agronomy12020541.<br><b>Study Country:</b> Ghana<br><b>Latitude:</b> 9.36<br><b>Longitude:</b> 0.1495<br><b>Digital Ag:</b> Sensors; Mobile phone<br><b>CSA Practices:</b> weather and climate services; soil moisture management; climate resilient cropping management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Market & information access; CSA Integration <br><b>Barriers (Digital Ag):</b> Limited technology access & connectivity; Infrastructure & advisory limitations; Awareness & trust barriers<br><b>Mitigation:</b> Not described<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> cost concerns; dependence on external help for maintenance<br><b>Equity and Inclusion:</b> gender<br></div>`)[0];
+                popup_34d7a1a3d803926a5227f910815299cf.setContent(html_1d65e86aee7892f19e6790d905c8a2a8);
+            
+        
+
+        marker_d0a72a85b787e50b0d32199f1fbc2972.bindPopup(popup_34d7a1a3d803926a5227f910815299cf)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c.addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+        
+    
+            var feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f = L.featureGroup.subGroup(
+                feature_group_03c64a18c2a9810bc30597c2983ce0f0
+            );
+        
+    
+            var marker_6599f0e47336165decf997991f316760 = L.marker(
+                [27.6947, 85.3461],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_d5a6e8924a31b83355e22214651c91b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6599f0e47336165decf997991f316760.setIcon(icon_d5a6e8924a31b83355e22214651c91b2);
+        
+    
+        var popup_0ff7ae1c0696cc9eea3f750e48068743 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dc20af2e34e066579df0dd9f4ad55a1d = $(`<div id="html_dc20af2e34e066579df0dd9f4ad55a1d" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Aoki 2024<br><b>Title:</b> Exploring the Impact of IoT and Weather Data Utilization on Agricultural Productivity in Nepal<br><b>Authors:</b> Eiji Aoki, Hiroshi Nozaki, Raunak Baskota<br><b>Year:</b> 2024<br><b>Journal:</b> Published in LNDECT 225, part of INCoS 2024 proceeding<br><b>DOI:</b> https://doi.org/10.1007/978-3-031-72322-3_26<br><b>Study Country:</b> Nepal<br><b>Latitude:</b> 27.6947<br><b>Longitude:</b> 85.3461<br><b>Digital Ag:</b> Mobile phone; Sensors; Precision Agriculture<br><b>CSA Practices:</b> irrigation management; soil health monitoring<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Access to inputs & technology; Cost & resource constraints; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Technology suitability and data gaps; Farmer education & technical capacity<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Efficient resource use; Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> high cost of technology; need for dependable connectivity<br><b>Equity and Inclusion:</b> age, education<br></div>`)[0];
+                popup_0ff7ae1c0696cc9eea3f750e48068743.setContent(html_dc20af2e34e066579df0dd9f4ad55a1d);
+            
+        
+
+        marker_6599f0e47336165decf997991f316760.bindPopup(popup_0ff7ae1c0696cc9eea3f750e48068743)
+        ;
+
+        
+    
+    
+            var marker_c840d9d539efeff97d2b9194e0d5c057 = L.marker(
+                [26.00403, 85.3461],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_8f936f2548caac94e470a74366c0c0e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c840d9d539efeff97d2b9194e0d5c057.setIcon(icon_8f936f2548caac94e470a74366c0c0e4);
+        
+    
+        var popup_f00844e93743d40e4218066187dd37be = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c44948a7084fb6ca81d23b12d63bcea1 = $(`<div id="html_c44948a7084fb6ca81d23b12d63bcea1" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Bijarniya 2020<br><b>Title:</b> Portfolios of Climate Smart Agriculture Practices in Smallholder Rice-Wheat System of Eastern Indo-Gangetic Plains—Crop Productivity, Resource Use Efficiency and Environmental Foot Prints<br><b>Authors:</b> Deepak Bijarniya, C. M. Parihar, R. K. Jat, Kailash Kalvania, S. K. Kakraliya, M. L. Jat  <br><b>Year:</b> 2020<br><b>Journal:</b> Agronomy<br><b>DOI:</b> 10.3390/agronomy10101561<br><b>Study Country:</b> India<br><b>Latitude:</b> 26.00403<br><b>Longitude:</b> 85.3461<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> nutrient management; reduced or no tillage; direct seeding of rice<br><b>Drivers (CSA):</b> Productivity & economic viability; Weather & climate resilience<br><b>Barriers (CSA):</b> Cost & resource constraints; Access to inputs & technology; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Market & information access<br><b>Barriers (Digital Ag):</b> Infrastructure & advisory limitations; Awareness & trust barriers; Cost & economic concerns<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions; Improved soil health<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> increase labor requirement; cost concern for technology<br><b>Equity and Inclusion:</b> participatory approach to innovation<br></div>`)[0];
+                popup_f00844e93743d40e4218066187dd37be.setContent(html_c44948a7084fb6ca81d23b12d63bcea1);
+            
+        
+
+        marker_c840d9d539efeff97d2b9194e0d5c057.bindPopup(popup_f00844e93743d40e4218066187dd37be)
+        ;
+
+        
+    
+    
+            var marker_e6fc1fef1d1d1b1126573bd112378736 = L.marker(
+                [8.0, -1.02319],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_499c9999e0f53efbe8ee25ca597a7a61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6fc1fef1d1d1b1126573bd112378736.setIcon(icon_499c9999e0f53efbe8ee25ca597a7a61);
+        
+    
+        var popup_cb81cd82dd3ce9682aece91eef42c4f8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2f19752491009dee35b9e0ecc8ffbe2d = $(`<div id="html_2f19752491009dee35b9e0ecc8ffbe2d" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Damba 2024<br><b>Title:</b> Constructing A Climate-Smart readiness index for smallholder farmers: The case of prioritized bundles of climate information services and climate smart agriculture in Ghana<br><b>Authors:</b> Osman Tahidu Damba, Collins Odhiambo Ageyo, Fred Kizito, Powell Mponela, Stephen Yeboah, Victor Attuquaye Clottey, Birgitta Adoma Oppong-Mensah, Jules Bayala, Faustina Obeng Adomaa, Mustapha Alasan Dalaa, Francisca Martey, Sophia Huyer, Robert Zougmore, Ghislain Tepa-Yotto, Manuele Tamo <br><b>Year:</b> 2024<br><b>Journal:</b> Climate Services<br><b>DOI:</b> 10.1016/j.cliser.2024.100453<br><b>Study Country:</b> Ghana<br><b>Latitude:</b> 8.0<br><b>Longitude:</b> -1.02319<br><b>Digital Ag:</b> Mobile phone; Precision Agriculture<br><b>CSA Practices:</b> agroforestry; integrated pest management; climate and weather information services<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency; Weather & climate resilience<br><b>Barriers (CSA):</b> Cost & resource constraints; Farmer education & skills<br><b>Drivers (Digital Ag):</b> Market & information access; CSA Integration<br><b>Barriers (Digital Ag):</b> Farmer education & technical capacity; Limited technology access & connectivity; Cost & economic concerns; Infrastructure & advisory limitations<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Improved farm productivity & crop yield; Economic & livelihood benefits; Pest & disease management<br><b>Mitigation Tradeoffs:</b> high initial cost of technology; increased demand on labor<br><b>Equity and Inclusion:</b> age, gender, participatory approach<br></div>`)[0];
+                popup_cb81cd82dd3ce9682aece91eef42c4f8.setContent(html_2f19752491009dee35b9e0ecc8ffbe2d);
+            
+        
+
+        marker_e6fc1fef1d1d1b1126573bd112378736.bindPopup(popup_cb81cd82dd3ce9682aece91eef42c4f8)
+        ;
+
+        
+    
+    
+            var marker_7bd8c49af7a1eebde61232c54d9d6055 = L.marker(
+                [10.08, 8.67],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_967a47faab3c576ef9a9f9118988f95f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7bd8c49af7a1eebde61232c54d9d6055.setIcon(icon_967a47faab3c576ef9a9f9118988f95f);
+        
+    
+        var popup_6eda2f2c682c4197f3a5fd7561eebfd8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e2711973e1ab49d27fa2b4e1ca31286e = $(`<div id="html_e2711973e1ab49d27fa2b4e1ca31286e" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Maertens 2023<br><b>Title:</b> Sustainable maize intensification through site-specific nutrient management advice: Experimental evidence from Nigeria<br><b>Authors:</b> Maertens, M., Oyinbo, O., Abdoulaye, T., & Chamberlin, J. <br><b>Year:</b> 2023<br><b>Journal:</b> Food Policy<br><b>DOI:</b> https://doi.org/10.1016/j.foodpol.2023.102546<br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 10.08<br><b>Longitude:</b> 8.67<br><b>Digital Ag:</b> Mobile phone; Decision Support System (DSS); Precision Agriculture<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Not described<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Economic & livelihood benefits<br><b>Mitigation Tradeoffs:</b> increase in fertilizer use<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_6eda2f2c682c4197f3a5fd7561eebfd8.setContent(html_e2711973e1ab49d27fa2b4e1ca31286e);
+            
+        
+
+        marker_7bd8c49af7a1eebde61232c54d9d6055.bindPopup(popup_6eda2f2c682c4197f3a5fd7561eebfd8)
+        ;
+
+        
+    
+    
+            var marker_a18a2a1d67f8f4414d17420ced44cf75 = L.marker(
+                [14.0, 15.0],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_99608c45a7584472d9d54080b2736848 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a18a2a1d67f8f4414d17420ced44cf75.setIcon(icon_99608c45a7584472d9d54080b2736848);
+        
+    
+        var popup_9e7977a1d2ef077e395d1c781285a1bf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_72bab5102b1fb1d01426baabd8af1f6a = $(`<div id="html_72bab5102b1fb1d01426baabd8af1f6a" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Oyinbo 2022<br><b>Title:</b> Digital extension, price risk, and farm performance: experimental evidence from Nigeria<br><b>Authors:</b> Oyakhilomen Oyinbo, Jordan Chamberlin, Tahirou Abdoulaye, Miet Maertens<br><b>Year:</b> 2022<br><b>Journal:</b> American Journal of Agricultural Economics<br><b>DOI:</b> DOI: 10.1111/ajae.1224<br><b>Study Country:</b> Nigeria<br><b>Latitude:</b> 14.0<br><b>Longitude:</b> 15.0<br><b>Digital Ag:</b> Decision Support System (DSS); Precision Agriculture<br><b>CSA Practices:</b> nutrient management<br><b>Drivers (CSA):</b> Productivity & economic viability; Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Cost & resource constraints; Labor, work & gender issues<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Not described<br><b>Mitigation:</b> Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> Fertilizer use efficiency may not increase farm income<br><b>Equity and Inclusion:</b> cost (access), focus on inequalities (income)<br></div>`)[0];
+                popup_9e7977a1d2ef077e395d1c781285a1bf.setContent(html_72bab5102b1fb1d01426baabd8af1f6a);
+            
+        
+
+        marker_a18a2a1d67f8f4414d17420ced44cf75.bindPopup(popup_9e7977a1d2ef077e395d1c781285a1bf)
+        ;
+
+        
+    
+    
+            var marker_3428f602d1bdd9cd44c019f6b90654a8 = L.marker(
+                [19.7575, 75.7139],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_3de21d4ebceb39d659649d4aab1feb2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3428f602d1bdd9cd44c019f6b90654a8.setIcon(icon_3de21d4ebceb39d659649d4aab1feb2f);
+        
+    
+        var popup_b2a738163c83e22230a162811347e12e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f9b18508fb719625e389cdf409ca08fa = $(`<div id="html_f9b18508fb719625e389cdf409ca08fa" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Rakholia 2024<br><b>Title:</b> Emerging technology adoption for sustainable agriculture in India– a pilot study<br><b>Authors:</b> Rajnish Rakholia, Jinal Tailor , Mitul Prajapati, Manan Shah,  Jatinderkumar R. Saini  <br><b>Year:</b> 2024<br><b>Journal:</b> Journal of Agriculture and Food Research <br><b>DOI:</b> https://doi.org/10.1016/j.jafr.2024.101238<br><b>Study Country:</b> India<br><b>Latitude:</b> 19.7575<br><b>Longitude:</b> 75.7139<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> nutrient management; irrigation water management<br><b>Drivers (CSA):</b> Not described<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management; Government & institutional trust; Market & information access<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Awareness & trust barriers; Technological risk perception; Technology suitability and data gaps; Infrastructure & advisory limitations<br><b>Mitigation:</b> Improved soil health; Nutrient use efficiency<br><b>Mitigation Co-benefits:</b> Improved farm productivity & crop yield; Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> high energy consumption<br><b>Equity and Inclusion:</b> education; traditional knowledge<br></div>`)[0];
+                popup_b2a738163c83e22230a162811347e12e.setContent(html_f9b18508fb719625e389cdf409ca08fa);
+            
+        
+
+        marker_3428f602d1bdd9cd44c019f6b90654a8.bindPopup(popup_b2a738163c83e22230a162811347e12e)
+        ;
+
+        
+    
+    
+            var marker_0067b6df7cc4ce7be4977acfefd2fca6 = L.marker(
+                [28.6353, 77.1645],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_f313a45ff4a268e1e0991ed8acd6c6fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0067b6df7cc4ce7be4977acfefd2fca6.setIcon(icon_f313a45ff4a268e1e0991ed8acd6c6fe);
+        
+    
+        var popup_8332b0194ddf0304dfe76905a1ed9c4c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_58974db88f15a66173eea1abec104197 = $(`<div id="html_58974db88f15a66173eea1abec104197" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Shekhawat 2021<br><b>Title:</b> Achieving sustainability in food systems: Addressing changing climate through real time nitrogen and weed management in a conservation agriculture‐based maize–wheat system<br><b>Authors:</b> Kapila Shekhawat, Vinod K. Singh, Sanjay Singh Rathore, Rishi Raj, and T.K. Das<br><b>Year:</b> 2021<br><b>Journal:</b> Sustainability<br><b>DOI:</b> 10.3390/su13095010<br><b>Study Country:</b> New Delhi, India<br><b>Latitude:</b> 28.6353<br><b>Longitude:</b> 77.1645<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> nutrient management; integrated weed management<br><b>Drivers (CSA):</b> Nutrient & resource efficiency; Weather & climate resilience<br><b>Barriers (CSA):</b> Not described<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Cost & economic concerns; Technology suitability and data gaps; Farmer education & technical capacity<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management; Improved farm productivity & crop yield<br><b>Mitigation Tradeoffs:</b> herbicide use dependence<br><b>Equity and Inclusion:</b> cost (access)<br></div>`)[0];
+                popup_8332b0194ddf0304dfe76905a1ed9c4c.setContent(html_58974db88f15a66173eea1abec104197);
+            
+        
+
+        marker_0067b6df7cc4ce7be4977acfefd2fca6.bindPopup(popup_8332b0194ddf0304dfe76905a1ed9c4c)
+        ;
+
+        
+    
+    
+            var marker_4d60f635f826d3219d32a37755e56fa2 = L.marker(
+                [30.8955, 75.8117],
+                {
+}
+            ).addTo(feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f);
+        
+    
+            var icon_674abf5fd54e2cb4e547471a6e03a725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4d60f635f826d3219d32a37755e56fa2.setIcon(icon_674abf5fd54e2cb4e547471a6e03a725);
+        
+    
+        var popup_ecff7511a0a1b70044e46d6ce9da5aeb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_672c4b2c05bc9d5eb621c60cdbe48086 = $(`<div id="html_672c4b2c05bc9d5eb621c60cdbe48086" style="width: 100.0%; height: 100.0%;"><b>Study Details:</b><br><b>Study ID:</b> Varinderpal-Singh 2020<br><b>Title:</b> Optical Sensing and Arbuscular Mycorrhizal Fungi for Improving Fertilizer Nitrogen and Phosphorus Use Efficiencies in Maize<br><b>Authors:</b> Varinderpal-Singh, Kunal, Sandeep Sharma, S. K. Gosal, Rita Choudhary, Reena Singh & Alok Adholeya & Bijay-Singh<br><b>Year:</b> 2020<br><b>Journal:</b> Journal of Soil Science and Plant Nutrition<br><b>DOI:</b> 10.1007/s42729-020-00277-z<br><b>Study Country:</b> India<br><b>Latitude:</b> 30.8955<br><b>Longitude:</b> 75.8117<br><b>Digital Ag:</b> Sensors; Precision Agriculture<br><b>CSA Practices:</b> Arbuscular mycorrhizal fungi (AMF)<br><b>Drivers (CSA):</b> Nutrient & resource efficiency<br><b>Barriers (CSA):</b> Farm-related challenges & trade-offs<br><b>Drivers (Digital Ag):</b> Resource efficiency & precision farm management<br><b>Barriers (Digital Ag):</b> Cost & economic concerns<br><b>Mitigation:</b> Reduction in Greenhouse Gas Emissions<br><b>Mitigation Co-benefits:</b> Enhanced soil & water management<br><b>Mitigation Tradeoffs:</b> no change of digital CSA on crop yield<br><b>Equity and Inclusion:</b> Not described<br></div>`)[0];
+                popup_ecff7511a0a1b70044e46d6ce9da5aeb.setContent(html_672c4b2c05bc9d5eb621c60cdbe48086);
+            
+        
+
+        marker_4d60f635f826d3219d32a37755e56fa2.bindPopup(popup_ecff7511a0a1b70044e46d6ce9da5aeb)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f.addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+        
+    
+            var layer_control_9904601384880a4d7d5d73795248cb66_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_987cd22aa1083e0d20cf2278ed86a264,
+                },
+                overlays :  {
+                    "All Categories" : feature_group_03c64a18c2a9810bc30597c2983ce0f0,
+                    "Sensors" : feature_group_sub_group_7ca14ec3f488dbfb88b3cfb4f94bab32,
+                    "Decision Support System" : feature_group_sub_group_3668bcd1f08b759cd97e8f70faa8e618,
+                    "Mobile Phone" : feature_group_sub_group_5d337d5d7e578e24db8b01bd9a61af4c,
+                    "Precision Agriculture" : feature_group_sub_group_d393c8ac57625b5b494ec6d11dab3e3f,
+                },
+            };
+            let layer_control_9904601384880a4d7d5d73795248cb66 = L.control.layers(
+                layer_control_9904601384880a4d7d5d73795248cb66_layers.base_layers,
+                layer_control_9904601384880a4d7d5d73795248cb66_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_35b7e7c5643b32946a8ac6d593e3a7b4);
+
+        
+</script>
+</html>
